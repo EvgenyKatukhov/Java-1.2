@@ -1,19 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        int fix = 100;
-        System.out.println("На вашем счете 100 рублей");
-        int increase= 1100;
-        System.out.println("Вы пополнили счет на " + increase);
-              if (increase >= 1000) {
-                  int bonus = increase/100;
-                  int ent = fix + bonus +increase;
-                  System.out.println("Баланс Вашего счета с учетом бонуса равен " + ent);
-              }
-                  else{
-                      int ent = fix + increase;
-                      System.out.println("Ваш Баланс " + ent);
-                  }
-              }
-
+        MilesService service = new MilesService();
+        int result = service.calculate(1000, 100);
+        System.out.println("На вашем счете с учетом бонуса " + result);
     }
+}
+
+
 
