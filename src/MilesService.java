@@ -1,4 +1,4 @@
-public class MilesService {
+public class Bonus{
     public int calculate(int increase, int fix) {
         if (increase >= 1000) {
             int bonus = increase / 100;
